@@ -23,7 +23,7 @@ function getCardDate(){
 }
 
 function getMd(loc){
-  return axios.get(`https://raw.githubusercontent.com/LiYueX/demodata/master/blogs/${loc}.md`)
+  return axios.get(`https://raw.githubusercontent.com/LiYueX/demodata/master/blogs/${loc}.md?${Math.random()}`)
   .then( (res) => (
     {data:res.data}
     ) )
