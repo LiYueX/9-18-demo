@@ -33,7 +33,8 @@ class About extends React.Component {
       root:{
         width: '30vw',
         height:'30vw',
-        margin: '0 auto'
+        margin: '0 auto',
+        marginBottom:'5vw'
       },
       input:{
         width: '25vw',
