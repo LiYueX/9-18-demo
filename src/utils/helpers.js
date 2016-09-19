@@ -11,11 +11,19 @@ function searchGit(username){
   })
 
 }
-export {searchGit}
 
 function getCardDate(){
-
   return axios.get(`https://raw.githubusercontent.com/LiYueX/demodata/master/card/card.json?${Math.random()}`)
+  .then( (res) => (
+    {data:res.data}
+    ) )
+  .catch(function (error) {
+    alert(error);
+  })
+}
+
+function getMd(loc){
+  return axios.get(`https://raw.githubusercontent.com/LiYueX/demodata/master/blogs/${loc}.md`)
   .then( (res) => (
     {data:res.data}
     ) )
@@ -24,4 +32,4 @@ function getCardDate(){
   })
 
 }
-export {getCardDate}
+export {searchGit,getCardDate,getMd}

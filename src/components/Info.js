@@ -5,10 +5,11 @@ class Info extends React.Component {
   render () {
     // <p>{this.props.data.name}</p>
     // <img src={this.props.data.avatar_url} />
+    // {this.props.data.avatar_url}
     let styles={
       root : {
-        width: '50vw',
-        height: 'auto',
+        width: '30vw',
+        height: '30vw',
         margin: '0 auto',
         border: '3px solid gold',
         padding: '1vw',
