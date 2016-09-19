@@ -20,7 +20,6 @@ class Blog extends React.Component {
     getMd(this.props.params.title)
     .then((data) => {
       this.setState({data : data.data , wait : false})
-      console.log(this.state.data);
     });
   }
   render () {
